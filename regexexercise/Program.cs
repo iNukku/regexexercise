@@ -9,8 +9,7 @@ namespace regexexercise
     {
         static void Main(string[] args)
         {
-            Regex regex = new Regex(@"(\(\+?45\))?\s?(\d\s?-?){8}");
-            Regex regex2 = new Regex(@"(\(\+?45\))?(\s?\d{2}\s?-?){4}");
+            Regex regex = new Regex(@"\b(\(\+?45\)\s?)?(\d{2}\s?-?){3}(\d{2})\b");
 
             string searchstring = "My phoneNumber is 61 12 32 43. Sometimes i write (+45) 61 12 32 43 or even 61123243 or maybe 61-12-32-43";
 
